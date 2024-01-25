@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "boa-home-task-UO"
+client_id = "9f9d2620aaeb2a1911961555fa447214"
+application_url = "https://explosion-withdrawal-professional-index.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_customers"
+
+[auth]
+redirect_urls = [
+  "https://explosion-withdrawal-professional-index.trycloudflare.com/auth/callback",
+  "https://explosion-withdrawal-professional-index.trycloudflare.com/auth/shopify/callback",
+  "https://explosion-withdrawal-professional-index.trycloudflare.com/api/auth/callback",
+  "https://explosion-withdrawal-professional-index.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "urielofir.myshopify.com"
