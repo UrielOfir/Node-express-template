@@ -17,7 +17,7 @@ function Extension() {
 
 
   return (
-    <Banner title="checkout-ui">
+    <Banner title="Save your cart">
       {translate('welcome', {target: extension.target})}
       
       <Button>Save</Button>
