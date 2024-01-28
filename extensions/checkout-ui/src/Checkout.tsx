@@ -4,6 +4,9 @@ import {
   useApi,
   useTranslate,
   reactExtension,
+  BlockStack,
+  View,
+  Checkbox,
 } from '@shopify/ui-extensions-react/checkout';
 
 export default reactExtension(
@@ -13,12 +16,25 @@ export default reactExtension(
 
 function Extension() {
   const translate = useTranslate();
-  const { extension  } = useApi();
+  const { extension , lines } = useApi();
 
 
   return (
     <Banner title="Save your cart">
-      {translate('welcome', {target: extension.target})}
+      <BlockStack spacing="none">
+					{lines.current.map((line, index) => (
+						<View key={index} border="none" padding={['base', 'none']}>
+							<Checkbox
+								id={`Checkbox-${index}`}
+								name="checkbox"
+								// checked={checkedStates[line.merchandise.id] || false}
+								// onChange={() => checkedList(line.merchandise.id)}
+							>
+								{line.merchandise.title}
+							</Checkbox>
+						</View>
+					))}
+				</BlockStack>
       
       <Button>Save</Button>
     </Banner>

@@ -2,7 +2,7 @@
 
 name = "boa-home-task-UO"
 client_id = "9f9d2620aaeb2a1911961555fa447214"
-application_url = "https://explosion-withdrawal-professional-index.trycloudflare.com"
+application_url = "https://rp-between-lg-orleans.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -11,10 +11,10 @@ scopes = "read_customers"
 
 [auth]
 redirect_urls = [
-  "https://explosion-withdrawal-professional-index.trycloudflare.com/auth/callback",
-  "https://explosion-withdrawal-professional-index.trycloudflare.com/auth/shopify/callback",
-  "https://explosion-withdrawal-professional-index.trycloudflare.com/api/auth/callback",
-  "https://explosion-withdrawal-professional-index.trycloudflare.com/.shopify/graphiql/auth/callback"
+  "https://rp-between-lg-orleans.trycloudflare.com/auth/callback",
+  "https://rp-between-lg-orleans.trycloudflare.com/auth/shopify/callback",
+  "https://rp-between-lg-orleans.trycloudflare.com/api/auth/callback",
+  "https://rp-between-lg-orleans.trycloudflare.com/.shopify/graphiql/auth/callback"
 ]
 
 [webhooks]
